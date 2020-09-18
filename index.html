@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Delicious Burgers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="icon">
+        <link rel="icon" href="logo.png">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: Century Gothic;
+                box-sizing: border-box;
+            }
+            
+            .body{
+              background-color: #c9ffee;
+              
+            }
+
+            .menu{
+                background-color: lightslategray;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 20px ;
+                position: relative;
+                z-index: 500;
+            }
+            
+            .logo{
+                position: relative;
+                padding: 5px;
+            }
+    
+            .slider {
+	            overflow: hidden;
+            }
+
+            .slider figure {
+	            position: relative;
+	            width: 500%;
+	            margin: 0;
+	            left: 0;
+	            animation: 20s slider infinite;
+            }
+
+            .slider figure img {
+	            width: 20%;
+	            float: left;
+            }
+            
+
+          @keyframes slider {
+            0% {
+              left: 0;
+            }
+            20% {
+              left: 0;
+            }
+            25% {
+              left: -100%;
+            }
+            45% {
+              left: -100%;
+            }
+            50% {
+              left: -200%;
+            }
+            70% {
+              left: -200%;
+            }
+            75% {
+              left: -300%;
+            }
+            95% {
+              left: -300%;
+            }
+            100% {
+              left: -400%;
+            }
+          }
+
+          .box{
+            align-items: flex-start;
+            display: flex;
+            background-color:#c7ede5;
+          }
+
+          .box-child1{
+            position: relative;
+            text-align: center;
+            flex: 8;
+            margin: 15px 30px;
+            padding: 50px 15px;
+            background: rgba(255,255,255,.4);
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+            background-color: whitesmoke;
+            border-style: solid;
+            border-width: 5px;
+          }
+
+          .box-child2{
+            position: relative;
+            text-align: center;
+            flex: 15;
+            margin: 15px 30px;
+            padding: 62px 15px;
+            background-color: whitesmoke;
+            box-shadow: 0 5px 15px rgba(0,0,0,.5);
+          }
+
+          
+
+          @media (max-width: 800px){
+            .box{
+              flex-direction: column;
+            }
+          }
+
+          .footer{
+            align-items: flex-start;
+            display: flex;
+          }
+
+          @media (max-width: 800px){
+            .footer{
+              flex-direction: column;
+            }
+          }
+
+          .f1{
+            position: relative;
+            text-align: center;
+            flex: 8;
+            margin: 0px 0px;
+            padding: 50px 15px;
+            background-color: whitesmoke;
+          }
+
+          .f2{
+            position: relative;
+            text-align: center;
+            flex: 8;
+            margin: 0px 0px;
+            padding: 50px 15px;
+            background-color: whitesmoke;
+          }
+
+          .f3{
+            position: relative;
+            text-align: center;
+            flex: 8;
+            margin: 0px 0px;
+            padding: 50px 15px;
+            background-color: whitesmoke;
+          }
+
+          .f4{
+            background-color: black;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            color: white;
+          }
+
+          #send {
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+
+          
+        </style>
+
+
+    </head>
+    <body class="body">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary text-white">
+            <div class="container">
+              <a class="logo" href="index.html">
+                  <img src="logo.png" height="100" widht="100">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Početak
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">O Nama</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div class="slider">
+            <figure>
+                <img src="1.jpg">
+                <img src="2.jpg">
+                <img src="3.jpg">
+                <img src="2.jpg">
+                <img src="1.jpg">        
+            </figure>
+        </div>
+        <div class="box">
+
+          <div class="box-child1">
+            <h2><b>Akcija</b></h2>
+            <p>Ukucajte Mail i u roku od 24 sata dobicete mail sa našom akcijom!</p>
+            <form id="form" target="_self" onsubmit=""
+                action="https://docs.google.com/forms/d/e/1FAIpQLScyJJHyvYjlNn0xmlZt-dX6U4Egm9aA5cWIovkVuLC3OrRzRA/formResponse"
+                autocomplete="off">
+                <input id="emailField" name="entry.207810395" placeholder="Vaš Mail" type="email" style="text-align: center; " required></input>
+                
+    
+                <button  id="send" type="submit" class="common_btn" >Potvrdi</button>
+                <p id="tekst"></p>
+            </form>
+    
+    
+        <script data-cfasync="false" type="text/javascript"
+                src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
+    
+    
+          </div>
+          <div class="box-child2">
+            <p>
+              Old education him departure any arranging one prevailed. Their end whole might began her. Behaved the comfort another fifteen eat. Partiality had his themselves ask pianoforte increasing discovered. So mr delay at since place whole above miles. He to observe conduct at detract because. Way ham unwilling not breakfast furniture explained perpetual. Or mr surrounded conviction so astonished literature. Songs to an blush woman be sorry young. We certain as removal attempt. 
+            </p>
+          </div>
+        </div>
+        <footer>
+          <div class="f1">
+              <h5>
+                <b>Navigacija</b>
+              </h5>
+              <h3>
+                <a href="index.html">
+                Početak
+                </a>
+              </h3>
+              <h3>
+                <a href="about.html">
+                  O Nama
+                </a>
+              </h3>
+              <h3>
+                <a href="portfolio.html">
+                  Portfolio
+                </a>
+              </h3>
+              <h3>
+                <a href="contact.html">
+                  Kontakt
+                </a>
+              </h3>
+          </div">
+          <div class="f2">
+              <h5>
+                  <b>Zapratite Nas</b>
+              </h5>
+              <a href="#">
+                  <img src="instagram.png" height="100" widht="100">
+              </a>
+              <a href="#">
+                  <img src="facebook.png" height="100" widht="100">
+              </a>
+          </div>
+          <div class="f3">
+              <h5>
+                <b>Kontakt</b>
+              </h5>
+              <p>
+                <b>Telefon:</b> 214-488-4139
+              </p>
+              <p>
+                <b>Email:</b> EricPWelch@teleworm.us
+               </p>
+              <p>
+                <b>Adresa:</b> 712 Essex Dr. Mohegan Lake, NY 10547.
+              </p>
+            </div>
+            <div class="f4">
+              <p>Copyright 2019 Sva prava zadržava. Delicious Burgers d.o.o.</p>
+            </div>
+          </footer>
+          <script></script>
+     </body>
+ </html>
